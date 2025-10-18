@@ -186,7 +186,7 @@ async function fetchRelationshipsForType(spicedbUrl, token, resourceType, resour
         headers: {
             'Content-Type': 'application/json',
             'Authorization': `Bearer ${token}`,
-                    'X-App-Token': app_token
+            'X-App-Token': app_token
         },
         body: JSON.stringify({
             relationshipFilter: relationshipFilter

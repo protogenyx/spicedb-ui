@@ -37,7 +37,7 @@ export default async function handler(req, res) {
                     headers: {
                         'Content-Type': 'application/json',
                         'Authorization': `Bearer ${token}`,
-                    'X-App-Token': app_token
+                        'X-App-Token': app_token
                     },
                     body: JSON.stringify({})
                 });
@@ -209,7 +209,7 @@ async function getRelationshipsForType(spicedbUrl, token, resourceType) {
         headers: {
             'Content-Type': 'application/json',
             'Authorization': `Bearer ${token}`,
-                    'X-App-Token': app_token
+            'X-App-Token': app_token
         },
         body: JSON.stringify({
             relationship_filter: {
