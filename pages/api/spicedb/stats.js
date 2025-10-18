@@ -4,13 +4,6 @@ export default async function handler(req, res) {
         return res.status(405).json({ message: 'Method not allowed' });
     }
 
-    const spicedbUrl = process.env.SPICEDB_URL;
-    const token = process.env.SPICEDB_TOKEN;
-
-
-    console.log('SPICEDB_URL at runtime:', process.env.SPICEDB_URL);
-    console.log('SPICEDB_TOKEN length:', (process.env.SPICEDB_TOKEN || '').length);
-
     try {
         let stats = {
             totalNamespaces: 0,

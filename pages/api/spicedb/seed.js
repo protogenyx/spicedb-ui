@@ -127,6 +127,9 @@ async function main() {
 
   const updates = [];
 
+    // ---- Site org: only owners can post (org:psych101 owner user:<uid>) ----
+  updates.push(create(obj('org', 'psych101'), 'owner', subj('user', 'DUHKdqPmiPbUAlAIozDjGOiCTWz2')));
+
   // Ensure plan objects exist and subscribe users
   for (const p of plans) {
     // Touch the plan object by touching a dummy relation with a dummy subject that we'll never use
